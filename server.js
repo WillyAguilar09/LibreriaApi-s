@@ -22,6 +22,14 @@ app.get('/api/usuarios', (req, res)=>{
         });
     
 });
+app.get('/api/categorias', (req, res) => {
+    res.json([{
+        "id": 1,
+        "nombre": "Electrónica ",
+
+
+    }])
+});
 
 app.listen(PORT,()=>{
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
